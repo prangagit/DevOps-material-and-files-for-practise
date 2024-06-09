@@ -1,0 +1,308 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;}
+\viewkind4\uc1\pard\f0\fs20 [ec2-user@ip-172-31-29-138 ~]$ ls\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$ vim first-script.sh\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$ bash\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$ aws configure\cf1\highlight2 
+\par \cf0\highlight0 AWS Access Key ID [None]: AKIAXYKJSGS3Q5MHZNGE\cf1\highlight2 
+\par \cf0\highlight0 AWS Secret Access Key [None]: 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\cf1\highlight2 
+\par \cf0\highlight0 Default region name [None]:\cf1\highlight2 
+\par \cf0\highlight0 Default output format [None]:\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$ vim aws_resource_tracker.sh\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$ chmod 777 aws_resource_tracker.                                                                                                                         sh\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$ ./aws_resource_tracker\cf1\highlight2 
+\par \cf0\highlight0 bash: ./aws_resource_tracker: No such file or directory\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$ ./aws_resource_tracker.sh\cf1\highlight2 
+\par \cf0\highlight0\{\cf1\highlight2 
+\par \cf0\highlight0     "Reservations": [\cf1\highlight2 
+\par \cf0\highlight0         \{\cf1\highlight2 
+\par \cf0\highlight0             "Groups": [],\cf1\highlight2 
+\par \cf0\highlight0             "Instances": [\cf1\highlight2 
+\par \cf0\highlight0                 \{\cf1\highlight2 
+\par \cf0\highlight0                     "AmiLaunchIndex": 0,\cf1\highlight2 
+\par \cf0\highlight0                     "ImageId": "ami-0d3a2960fcac852bc",\cf1\highlight2 
+\par \cf0\highlight0                     "InstanceId": "i-0a0e8bb5d72b51fa6",\cf1\highlight2 
+\par \cf0\highlight0                     "InstanceType": "t3.micro",\cf1\highlight2 
+\par \cf0\highlight0                     "KeyName": "onecoreVM",\cf1\highlight2 
+\par \cf0\highlight0                     "LaunchTime": "2024-06-07T16:21:08+00:00",\cf1\highlight2 
+\par \cf0\highlight0                     "Monitoring": \{\cf1\highlight2 
+\par \cf0\highlight0                         "State": "disabled"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "Placement": \{\cf1\highlight2 
+\par \cf0\highlight0                         "AvailabilityZone": "eu-north-1a",\cf1\highlight2 
+\par \cf0\highlight0                         "GroupName": "",\cf1\highlight2 
+\par \cf0\highlight0                         "Tenancy": "default"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "PrivateDnsName": "ip-172-31-29-138.eu-north-1.compute.internal",\cf1\highlight2 
+\par \cf0\highlight0                     "PrivateIpAddress": "172.31.29.138",\cf1\highlight2 
+\par \cf0\highlight0                     "ProductCodes": [],\cf1\highlight2 
+\par \cf0\highlight0                     "PublicDnsName": "ec2-16-171-234-236.eu-north-1.compute.amazonaws.com",\cf1\highlight2 
+\par \cf0\highlight0                     "PublicIpAddress": "16.171.234.236",\cf1\highlight2 
+\par \cf0\highlight0                     "State": \{\cf1\highlight2 
+\par \cf0\highlight0                         "Code": 16,\cf1\highlight2 
+\par \cf0\highlight0                         "Name": "running"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "StateTransitionReason": "",\cf1\highlight2 
+\par \cf0\highlight0                     "SubnetId": "subnet-0f3994517c0f6ac94",\cf1\highlight2 
+\par \cf0\highlight0                     "VpcId": "vpc-06a793436dec149f2",\cf1\highlight2 
+\par \cf0\highlight0                     "Architecture": "x86_64",\cf1\highlight2 
+\par \cf0\highlight0 :\cf1\highlight2 
+\par \cf0\highlight0         \{\cf1\highlight2 
+\par \cf0\highlight0             "Groups": [],\cf1\highlight2 
+\par \cf0\highlight0             "Instances": [\cf1\highlight2 
+\par \cf0\highlight0                 \{\cf1\highlight2 
+\par \cf0\highlight0                     "AmiLaunchIndex": 0,\cf1\highlight2 
+\par \cf0\highlight0                     "ImageId": "ami-0d3a2960fcac852bc",\cf1\highlight2 
+\par \cf0\highlight0                     "InstanceId": "i-0a0e8bb5d72b51fa6",\cf1\highlight2 
+\par \cf0\highlight0                     "InstanceType": "t3.micro",\cf1\highlight2 
+\par \cf0\highlight0                     "KeyName": "onecoreVM",\cf1\highlight2 
+\par \cf0\highlight0                     "LaunchTime": "2024-06-07T16:21:08+00:00",\cf1\highlight2 
+\par \cf0\highlight0                     "Monitoring": \{\cf1\highlight2 
+\par \cf0\highlight0                         "State": "disabled"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "Placement": \{\cf1\highlight2 
+\par \cf0\highlight0                         "AvailabilityZone": "eu-north-1a",\cf1\highlight2 
+\par \cf0\highlight0                         "GroupName": "",\cf1\highlight2 
+\par \cf0\highlight0                         "Tenancy": "default"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "PrivateDnsName": "ip-172-31-29-138.eu-north-1.compute.internal",\cf1\highlight2 
+\par \cf0\highlight0                     "PrivateIpAddress": "172.31.29.138",\cf1\highlight2 
+\par \cf0\highlight0                     "ProductCodes": [],\cf1\highlight2 
+\par \cf0\highlight0                     "PublicDnsName": "ec2-16-171-234-236.eu-north-1.compute.amazonaws.com",\cf1\highlight2 
+\par \cf0\highlight0                     "PublicIpAddress": "16.171.234.236",\cf1\highlight2 
+\par \cf0\highlight0                     "State": \{\cf1\highlight2 
+\par \cf0\highlight0                         "Code": 16,\cf1\highlight2 
+\par \cf0\highlight0                         "Name": "running"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "StateTransitionReason": "",\cf1\highlight2 
+\par \cf0\highlight0                     "SubnetId": "subnet-0f3994517c0f6ac94",\cf1\highlight2 
+\par \cf0\highlight0                     "VpcId": "vpc-06a793436dec149f2",\cf1\highlight2 
+\par \cf0\highlight0                     "Architecture": "x86_64",\cf1\highlight2 
+\par \cf0\highlight0                     "BlockDeviceMappings": [\cf1\highlight2 
+\par \cf0\highlight0                         \{\cf1\highlight2 
+\par \cf0\highlight0                             "DeviceName": "/dev/xvda",\cf1\highlight2 
+\par \cf0\highlight0                             "Ebs": \{\cf1\highlight2 
+\par \cf0\highlight0                                 "AttachTime": "2024-06-07T16:21:08+00:00",\cf1\highlight2 
+\par \cf0\highlight0                                 "DeleteOnTermination": true,\cf1\highlight2 
+\par \cf0\highlight0                                 "Status": "attached",\cf1\highlight2 
+\par \cf0\highlight0                                 "VolumeId": "vol-090f1420972ed7f37"\cf1\highlight2 
+\par \cf0\highlight0 :\cf1\highlight2 
+\par \cf0\highlight0         \{\cf1\highlight2 
+\par \cf0\highlight0             "Groups": [],\cf1\highlight2 
+\par \cf0\highlight0\{\cf1\highlight2 
+\par \cf0\highlight0     "Reservations": [\cf1\highlight2 
+\par \cf0\highlight0         \{\cf1\highlight2 
+\par \cf0\highlight0             "Groups": [],\cf1\highlight2 
+\par \cf0\highlight0             "Instances": [\cf1\highlight2 
+\par \cf0\highlight0                 \{\cf1\highlight2 
+\par \cf0\highlight0                     "AmiLaunchIndex": 0,\cf1\highlight2 
+\par \cf0\highlight0                     "ImageId": "ami-0d3a2960fcac852bc",\cf1\highlight2 
+\par \cf0\highlight0                     "InstanceId": "i-0a0e8bb5d72b51fa6",\cf1\highlight2 
+\par \cf0\highlight0                     "InstanceType": "t3.micro",\cf1\highlight2 
+\par \cf0\highlight0                     "KeyName": "onecoreVM",\cf1\highlight2 
+\par \cf0\highlight0                     "LaunchTime": "2024-06-07T16:21:08+00:00",\cf1\highlight2 
+\par \cf0\highlight0                     "Monitoring": \{\cf1\highlight2 
+\par \cf0\highlight0                         "State": "disabled"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "Placement": \{\cf1\highlight2 
+\par \cf0\highlight0                         "AvailabilityZone": "eu-north-1a",\cf1\highlight2 
+\par \cf0\highlight0                         "GroupName": "",\cf1\highlight2 
+\par \cf0\highlight0                         "Tenancy": "default"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "PrivateDnsName": "ip-172-31-29-138.eu-north-1.compute.internal",\cf1\highlight2 
+\par \cf0\highlight0                     "PrivateIpAddress": "172.31.29.138",\cf1\highlight2 
+\par \cf0\highlight0                     "ProductCodes": [],\cf1\highlight2 
+\par \cf0\highlight0                     "PublicDnsName": "ec2-16-171-234-236.eu-north-1.compute.amazonaws.com",\cf1\highlight2 
+\par \cf0\highlight0                     "PublicIpAddress": "16.171.234.236",\cf1\highlight2 
+\par \cf0\highlight0                     "State": \{\cf1\highlight2 
+\par \cf0\highlight0                         "Code": 16,\cf1\highlight2 
+\par \cf0\highlight0                         "Name": "running"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "StateTransitionReason": "",\cf1\highlight2 
+\par \cf0\highlight0                     "SubnetId": "subnet-0f3994517c0f6ac94",\cf1\highlight2 
+\par \cf0\highlight0                     "VpcId": "vpc-06a793436dec149f2",\cf1\highlight2 
+\par \cf0\highlight0                     "Architecture": "x86_64",\cf1\highlight2 
+\par \cf0\highlight0                     "BlockDeviceMappings": [\cf1\highlight2 
+\par \cf0\highlight0                         \{\cf1\highlight2 
+\par \cf0\highlight0                             "DeviceName": "/dev/xvda",\cf1\highlight2 
+\par \cf0\highlight0                             "Ebs": \{\cf1\highlight2 
+\par \cf0\highlight0                                 "AttachTime": "2024-06-07T16:21:08+00:00",\cf1\highlight2 
+\par \cf0\highlight0                                 "DeleteOnTermination": true,\cf1\highlight2 
+\par \cf0\highlight0                                 "Status": "attached",\cf1\highlight2 
+\par \cf0\highlight0                                 "VolumeId": "vol-090f1420972ed7f37"\cf1\highlight2 
+\par \cf0\highlight0\{\cf1\highlight2 
+\par \cf0\highlight0     "Functions": []\cf1\highlight2 
+\par \cf0\highlight0\}\cf1\highlight2 
+\par 
+\par \cf0\highlight0\{\cf1\highlight2 
+\par \cf0\highlight0     "Users": []\cf1\highlight2 
+\par \cf0\highlight0\}\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$ ./aws_resource_tracker.sh | more\cf1\highlight2 
+\par \cf0\highlight0\{\cf1\highlight2 
+\par \cf0\highlight0     "Reservations": [\cf1\highlight2 
+\par \cf0\highlight0         \{\cf1\highlight2 
+\par \cf0\highlight0             "Groups": [],\cf1\highlight2 
+\par \cf0\highlight0             "Instances": [\cf1\highlight2 
+\par \cf0\highlight0                 \{\cf1\highlight2 
+\par \cf0\highlight0                     "AmiLaunchIndex": 0,\cf1\highlight2 
+\par \cf0\highlight0                     "ImageId": "ami-0d3a2960fcac852bc",\cf1\highlight2 
+\par \cf0\highlight0                     "InstanceId": "i-0a0e8bb5d72b51fa6",\cf1\highlight2 
+\par \cf0\highlight0                     "InstanceType": "t3.micro",\cf1\highlight2 
+\par \cf0\highlight0                     "KeyName": "onecoreVM",\cf1\highlight2 
+\par \cf0\highlight0                     "LaunchTime": "2024-06-07T16:21:08+00:00",\cf1\highlight2 
+\par \cf0\highlight0                     "Monitoring": \{\cf1\highlight2 
+\par \cf0\highlight0                         "State": "disabled"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "Placement": \{\cf1\highlight2 
+\par \cf0\highlight0                         "AvailabilityZone": "eu-north-1a",\cf1\highlight2 
+\par \cf0\highlight0                         "GroupName": "",\cf1\highlight2 
+\par \cf0\highlight0                         "Tenancy": "default"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "PrivateDnsName": "ip-172-31-29-138.eu-north-1.compute.internal",\cf1\highlight2 
+\par \cf0\highlight0                     "PrivateIpAddress": "172.31.29.138",\cf1\highlight2 
+\par \cf0\highlight0                     "ProductCodes": [],\cf1\highlight2 
+\par \cf0\highlight0                     "PublicDnsName": "ec2-16-171-234-236.eu-north-1.compute.amazonaws.com",\cf1\highlight2 
+\par \cf0\highlight0                     "PublicIpAddress": "16.171.234.236",\cf1\highlight2 
+\par \cf0\highlight0                     "State": \{\cf1\highlight2 
+\par \cf0\highlight0                         "Code": 16,\cf1\highlight2 
+\par \cf0\highlight0                         "Name": "running"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "StateTransitionReason": "",\cf1\highlight2 
+\par \cf0\highlight0                     "SubnetId": "subnet-0f3994517c0f6ac94",\cf1\highlight2 
+\par \cf0\highlight0                     "VpcId": "vpc-06a793436dec149f2",\cf1\highlight2 
+\par \cf0\highlight0                     "Architecture": "x86_64",\cf1\highlight2 
+\par \cf0\highlight0                     "BlockDeviceMappings": [\cf1\highlight2 
+\par \cf0\highlight0                         \{\cf1\highlight2 
+\par \cf0\highlight0                             "DeviceName": "/dev/xvda",\cf1\highlight2 
+\par \cf0\highlight0                             "Ebs": \{\cf1\highlight2 
+\par \cf0\highlight0                                 "AttachTime": "2024-06-07T16:21:08+00:00",\cf1\highlight2 
+\par \cf0\highlight0                                 "DeleteOnTermination": true,\cf1\highlight2 
+\par \cf0\highlight0                                 "Status": "attached",\cf1\highlight2 
+\par \cf0\highlight0                                 "VolumeId": "vol-090f1420972ed7f37"\cf1\highlight2 
+\par \cf0\highlight0                             \}\cf1\highlight2 
+\par \cf0\highlight0                         \}\cf1\highlight2 
+\par \cf0\highlight0                     ],\cf1\highlight2 
+\par \cf0\highlight0                     "ClientToken": "09f12453-3ad5-48bb-93b9-234bbd89ef4a",\cf1\highlight2 
+\par \cf0\highlight0                     "EbsOptimized": true,\cf1\highlight2 
+\par \cf0\highlight0                     "EnaSupport": true,\cf1\highlight2 
+\par \cf0\highlight0                     "Hypervisor": "xen",\cf1\highlight2 
+\par \cf0\highlight0                     "NetworkInterfaces": [\cf1\highlight2 
+\par \cf0\highlight0                         \{\cf1\highlight2 
+\par \cf0\highlight0                             "Association": \{\cf1\highlight2 
+\par \cf0\highlight0                                 "IpOwnerId": "amazon",\cf1\highlight2 
+\par \cf0\highlight0                                 "PublicDnsName": "ec2-16-171-234-236.eu-north-1.compute.amazonaws.com",\cf1\highlight2 
+\par \cf0\highlight0                                 "PublicIp": "16.171.234.236"\cf1\highlight2 
+\par \cf0\highlight0                             \},\cf1\highlight2 
+\par \cf0\highlight0                             "Attachment": \{\cf1\highlight2 
+\par \cf0\highlight0                                 "AttachTime": "2024-06-07T16:21:08+00:00",\cf1\highlight2 
+\par \cf0\highlight0                                 "AttachmentId": "eni-attach-0080e9b8bb7a0ba66",\cf1\highlight2 
+\par \cf0\highlight0                                 "DeleteOnTermination": true,\cf1\highlight2 
+\par \cf0\highlight0                                 "DeviceIndex": 0,\cf1\highlight2 
+\par \cf0\highlight0                                 "Status": "attached",\cf1\highlight2 
+\par \cf0\highlight0                                 "NetworkCardIndex": 0\cf1\highlight2 
+\par \cf0\highlight0                             \},\cf1\highlight2 
+\par \cf0\highlight0                             "Description": "",\cf1\highlight2 
+\par \cf0\highlight0                             "Groups": [\cf1\highlight2 
+\par \cf0\highlight0                                 \{\cf1\highlight2 
+\par \cf0\highlight0                                     "GroupName": "launch-wizard-6",\cf1\highlight2 
+\par \cf0\highlight0                                     "GroupId": "sg-0efef6353cb84b27e"\cf1\highlight2 
+\par \cf0\highlight0                                 \}\cf1\highlight2 
+\par \cf0\highlight0                             ],\cf1\highlight2 
+\par \cf0\highlight0                             "Ipv6Addresses": [],\cf1\highlight2 
+\par \cf0\highlight0                             "MacAddress": "06:54:4e:26:67:31",\cf1\highlight2 
+\par \cf0\highlight0                             "NetworkInterfaceId": "eni-0e8781807b519c776",\cf1\highlight2 
+\par \cf0\highlight0                             "OwnerId": "533267100855",\cf1\highlight2 
+\par \cf0\highlight0                             "PrivateDnsName": "ip-172-31-29-138.eu-north-1.compute.internal",\cf1\highlight2 
+\par \cf0\highlight0                             "PrivateIpAddress": "172.31.29.138",\cf1\highlight2 
+\par \cf0\highlight0                             "PrivateIpAddresses": [\cf1\highlight2 
+\par \cf0\highlight0                                 \{\cf1\highlight2 
+\par \cf0\highlight0                                     "Association": \{\cf1\highlight2 
+\par \cf0\highlight0                                         "IpOwnerId": "amazon",\cf1\highlight2 
+\par \cf0\highlight0                                         "PublicDnsName": "ec2-16-171-234-236.eu-north-1.compute.amazonaws.com",\cf1\highlight2 
+\par \cf0\highlight0                                         "PublicIp": "16.171.234.236"\cf1\highlight2 
+\par \cf0\highlight0                                     \},\cf1\highlight2 
+\par \cf0\highlight0                                     "Primary": true,\cf1\highlight2 
+\par \cf0\highlight0                                     "PrivateDnsName": "ip-172-31-29-138.eu-north-1.compute.internal",\cf1\highlight2 
+\par \cf0\highlight0                                     "PrivateIpAddress": "172.31.29.138"\cf1\highlight2 
+\par \cf0\highlight0                                 \}\cf1\highlight2 
+\par \cf0\highlight0                             ],\cf1\highlight2 
+\par \cf0\highlight0                             "SourceDestCheck": true,\cf1\highlight2 
+\par \cf0\highlight0                             "Status": "in-use",\cf1\highlight2 
+\par \cf0\highlight0                             "SubnetId": "subnet-0f3994517c0f6ac94",\cf1\highlight2 
+\par \cf0\highlight0                             "VpcId": "vpc-06a793436dec149f2",\cf1\highlight2 
+\par \cf0\highlight0                             "InterfaceType": "interface"\cf1\highlight2 
+\par \cf0\highlight0                         \}\cf1\highlight2 
+\par \cf0\highlight0                     ],\cf1\highlight2 
+\par \cf0\highlight0                     "RootDeviceName": "/dev/xvda",\cf1\highlight2 
+\par \cf0\highlight0                     "RootDeviceType": "ebs",\cf1\highlight2 
+\par \cf0\highlight0                     "SecurityGroups": [\cf1\highlight2 
+\par \cf0\highlight0                         \{\cf1\highlight2 
+\par \cf0\highlight0                             "GroupName": "launch-wizard-6",\cf1\highlight2 
+\par \cf0\highlight0                             "GroupId": "sg-0efef6353cb84b27e"\cf1\highlight2 
+\par \cf0\highlight0                         \}\cf1\highlight2 
+\par \cf0\highlight0                     ],\cf1\highlight2 
+\par \cf0\highlight0                     "SourceDestCheck": true,\cf1\highlight2 
+\par \cf0\highlight0                     "Tags": [\cf1\highlight2 
+\par \cf0\highlight0                         \{\cf1\highlight2 
+\par \cf0\highlight0                             "Key": "Name",\cf1\highlight2 
+\par \cf0\highlight0                             "Value": "oneCrorevm"\cf1\highlight2 
+\par \cf0\highlight0                         \}\cf1\highlight2 
+\par \cf0\highlight0                     ],\cf1\highlight2 
+\par \cf0\highlight0                     "VirtualizationType": "hvm",\cf1\highlight2 
+\par \cf0\highlight0                     "CpuOptions": \{\cf1\highlight2 
+\par \cf0\highlight0                         "CoreCount": 1,\cf1\highlight2 
+\par \cf0\highlight0                         "ThreadsPerCore": 2\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "CapacityReservationSpecification": \{\cf1\highlight2 
+\par \cf0\highlight0                         "CapacityReservationPreference": "open"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "HibernationOptions": \{\cf1\highlight2 
+\par \cf0\highlight0                         "Configured": false\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "MetadataOptions": \{\cf1\highlight2 
+\par \cf0\highlight0                         "State": "applied",\cf1\highlight2 
+\par \cf0\highlight0                         "HttpTokens": "required",\cf1\highlight2 
+\par \cf0\highlight0                         "HttpPutResponseHopLimit": 2,\cf1\highlight2 
+\par \cf0\highlight0                         "HttpEndpoint": "enabled",\cf1\highlight2 
+\par \cf0\highlight0                         "HttpProtocolIpv6": "disabled",\cf1\highlight2 
+\par \cf0\highlight0                         "InstanceMetadataTags": "disabled"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "EnclaveOptions": \{\cf1\highlight2 
+\par \cf0\highlight0                         "Enabled": false\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "BootMode": "uefi-preferred",\cf1\highlight2 
+\par \cf0\highlight0                     "PlatformDetails": "Linux/UNIX",\cf1\highlight2 
+\par \cf0\highlight0                     "UsageOperation": "RunInstances",\cf1\highlight2 
+\par \cf0\highlight0                     "UsageOperationUpdateTime": "2024-06-07T16:21:08+00:00",\cf1\highlight2 
+\par \cf0\highlight0                     "PrivateDnsNameOptions": \{\cf1\highlight2 
+\par \cf0\highlight0                         "HostnameType": "ip-name",\cf1\highlight2 
+\par \cf0\highlight0                         "EnableResourceNameDnsARecord": true,\cf1\highlight2 
+\par \cf0\highlight0                         "EnableResourceNameDnsAAAARecord": false\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "MaintenanceOptions": \{\cf1\highlight2 
+\par \cf0\highlight0                         "AutoRecovery": "default"\cf1\highlight2 
+\par \cf0\highlight0                     \},\cf1\highlight2 
+\par \cf0\highlight0                     "CurrentInstanceBootMode": "uefi"\cf1\highlight2 
+\par \cf0\highlight0                 \}\cf1\highlight2 
+\par \cf0\highlight0             ],\cf1\highlight2 
+\par \cf0\highlight0             "OwnerId": "533267100855",\cf1\highlight2 
+\par \cf0\highlight0             "ReservationId": "r-066632bf5e41b1caa"\cf1\highlight2 
+\par \cf0\highlight0         \}\cf1\highlight2 
+\par \cf0\highlight0     ]\cf1\highlight2 
+\par \cf0\highlight0\}\cf1\highlight2 
+\par \cf0\highlight0\{\cf1\highlight2 
+\par \cf0\highlight0     "Functions": []\cf1\highlight2 
+\par \cf0\highlight0\}\cf1\highlight2 
+\par \cf0\highlight0\{\cf1\highlight2 
+\par \cf0\highlight0     "Users": []\cf1\highlight2 
+\par \cf0\highlight0\}\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-29-138 ~]$\cf1\highlight2 
+\par \pard\cf0\highlight0\f1\fs16 
+\par }
+ 
